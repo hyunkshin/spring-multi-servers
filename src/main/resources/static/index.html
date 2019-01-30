@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="/webjars/fullcalendar/dist/fullcalendar.min.css" />
+		<link rel="stylesheet" href="/calendar.css" />
+		<script src="/webjars/jquery/dist/jquery.min.js"></script>
+		<script src="/webjars/moment/min/moment.min.js"></script>
+		<script src="/webjars/fullcalendar/dist/fullcalendar.min.js"></script>
+		<script>
+		
+		$(document).ready(function() {
+			$('#calendar').fullCalendar({
+				events: '/schedule'
+			})
+		});
+
+		</script>
+	</head>
+	<body>
+		<div id='calendar'></div>
+		<div>
+			<p>
+			<a href="/portal">Portal</a>
+		</div>
+	</body>
+</html>
