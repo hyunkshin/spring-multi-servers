@@ -25,11 +25,12 @@ public class MultiServersApplication extends SpringBootServletInitializer implem
 	private AbstractApplicationContext parentcontext;
 
 	public static void main(String[] args) {
-		SpringApplicationBuilder builder = new SpringApplicationBuilder().parent(ParentConfig.class).web(WebApplicationType.SERVLET)
-			.child(PortalConfig.class).web(WebApplicationType.SERVLET)
+		SpringApplicationBuilder builder;
+		new SpringApplicationBuilder().parent(ParentConfig.class).web(WebApplicationType.SERVLET)
+/*			.child(PortalConfig.class).web(WebApplicationType.SERVLET)
 			.sibling(Serv1Config.class).web(WebApplicationType.SERVLET)
-			.sibling(Serv2Config.class).web(WebApplicationType.SERVLET);
-		builder.run(args);
+			.sibling(Serv2Config.class).web(WebApplicationType.SERVLET);*/
+		.run(args);
 	}
 
 	@Override
