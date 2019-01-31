@@ -45,6 +45,7 @@
 
 
 	</dependencies>
+	
 	<profiles>
 		<profile>
 			<id>openshift</id>
